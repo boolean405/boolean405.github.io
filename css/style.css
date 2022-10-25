@@ -85,13 +85,13 @@ p {
 }
 
 /* about */
-.about-bg-img {
+.about-bg {
     /* background-image: url(../asstes/images/about-img.jpg); */
     background-color: lightcyan;
     padding: 100px 0;
 }
 
-.contact-bg-img{
+.contact-bg-img {
     background-color: aquamarine;
     padding: 100px 0 200px 0;
 }
