@@ -66,7 +66,7 @@ p {
 /* welcome title */
 .welcome-title {
     background-image: url(../asstes/images/img2.jpg);
-    padding: 100px 0;
+    padding: 100px 0 200px 0;
     /* background-color: lightcyan; */
 }
 
@@ -82,4 +82,16 @@ p {
 /* footer */
 .ft-created {
     text-decoration: none;
+}
+
+/* about */
+.about-bg {
+    /* background-image: url(../asstes/images/about-img.jpg); */
+    background-color: lightcyan;
+    padding: 100px 0;
+}
+
+.contact-bg-img{
+    background-color: aquamarine;
+    padding: 100px 0 200px 0;
 }
