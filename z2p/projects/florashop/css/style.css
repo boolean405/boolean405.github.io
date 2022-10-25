@@ -1,0 +1,394 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+@font-face {
+  font-family: font1;
+  src: url(../fonts/Oswald-Regular.ttf);
+}
+
+@font-face {
+  font-family: font3;
+  src: url(../fonts/Fira_Sans/FiraSans-Regular.ttf);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: font1;
+  font-weight: unset;
+}
+
+.contact_header {
+  text-align: center;
+  background-color: #abd9ec;
+  padding: 20px;
+}
+
+p {
+  font-family: font3;
+}
+
+textarea {
+  resize: none;
+}
+
+/* start welcome */
+.brand_logo {
+  width: 100px;
+  margin-left: 50px;
+}
+
+.brand_name {
+  position: absolute;
+  top: 20px;
+  left: 100px;
+  font-family: font1;
+}
+
+.brand {
+  display: inline-block;
+}
+
+.nav_bar ul {
+  float: right;
+}
+
+.nav_bar ul li {
+  display: inline-block;
+  margin-top: 20px;
+  margin-right: 50px;
+}
+
+.nav_item {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-family: font1;
+}
+
+.nav_item:hover {
+  color: #1a86af;
+  letter-spacing: 10px;
+  transition-delay: 1ms;
+}
+
+.nav_card {
+  color: black;
+  /* display: inline-block; */
+}
+
+.card_count {
+  display: inline-block;
+  position: relative;
+  right: 60px;
+  top: -15px;
+  border-radius: 50%;
+  color: white;
+  background-color: black;
+  padding: 3px;
+  width: 15px;
+  text-align: center;
+}
+
+.welcome_img {
+  width: 100%;
+}
+
+.welcome_text {
+  position: absolute;
+  top: 200px;
+  left: 10%;
+}
+
+.welcome_title {
+  margin-bottom: 20px;
+  font-weight: unset;
+}
+
+.welcome_para {
+  font-family: font3;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.welcome_shop {
+  padding: 10px;
+  border: 1px solid #1a86af;
+  border-radius: 5px;
+  outline: none;
+}
+
+.welcome_button:hover,
+.welcome_button:active {
+  text-decoration: none;
+  color: white;
+}
+
+.welcome_button:visited,
+.welcome_button:link {
+  text-decoration: none;
+}
+
+.welcome_shop:hover {
+  background-color: #1a86af;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* start latest products */
+.lp_title {
+  text-align: center;
+  font-weight: unset;
+}
+
+.lp_hr {
+  width: 100px;
+  margin: auto;
+  border: 2px solid #1b87b4;
+}
+
+.lp {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 40px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.lp_img {
+  width: 50%;
+  border-radius: 5px;
+}
+
+.add_to_card {
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  border: 2px solid #abd9ec;
+  outline: none;
+}
+
+.add_to_card:hover {
+  background-color: #abd9ec;
+  cursor: pointer;
+}
+
+.discount {
+  text-decoration: line-through;
+  color: red;
+  font-size: 80%;
+}
+
+/* find florist float */
+.header_title {
+  text-align: center;
+  background-color: #abd9ec;
+  padding: 20px;
+  margin-right: 10%;
+  margin-left: 10%;
+  border-radius: 5px;
+}
+
+.find_florist {
+  display: grid;
+  grid-template-columns: auto auto;
+  /* width: 80%; */
+  text-align: center;
+  background-color: #d7e1e6;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  border-radius: 5px;
+}
+
+.find_florist_text {
+  margin-top: 150px;
+  margin-left: 20px;
+  text-align: left;
+  font-family: font3;
+}
+
+.find_florist_text p {
+  padding-bottom: 20px;
+}
+
+.florist_img {
+  /* text-align: center; */
+  /* width: 90%; */
+  margin: 10px;
+  border-radius: 5px;
+}
+
+/* packaging */
+.packaging_img {
+  width: 40%;
+  margin-left: 10%;
+  border-radius: 5px;
+  float: left;
+  margin-top: 10px;
+}
+
+.packaging_text {
+  position: relative;
+  left: 50px;
+  width: 87%;
+  font-family: font3;
+  text-align: justify;
+  margin-top: 10px;
+}
+
+.packaging div h2 {
+  font-family: font1;
+  font-weight: unset;
+  text-transform: uppercase;
+}
+
+.packaging_para {
+  margin-bottom: 70px;
+  margin-top: 10px;
+}
+
+.packaging_icon {
+  padding-right: 30px;
+  display: inline-block;
+  margin-top: 30px;
+}
+
+.clear {
+  clear: both;
+}
+
+/* about */
+.about_grid {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  background: url(../images/about_bg.jpg);
+  height: 200px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* .about_grid div h2 {
+
+} */
+
+.about_grid div p {
+  font-family: font3;
+  padding-top: 10px;
+}
+
+.about_grid div {
+  padding-top: 50px;
+}
+
+.about_hr {
+  width: 80px;
+  margin: auto;
+  border: 2px solid #1a86af;
+}
+
+/* service grid */
+.service {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  text-align: center;
+  background-color: #d8eaf1;
+  padding: 30px 0;
+  margin-top: 50px;
+}
+
+.service_text {
+  display: inline-block;
+  margin-left: 5px;
+  font-family: font3;
+}
+
+.service_title {
+  font-size: 20px;
+  font-weight: 500;
+  font-family: font1;
+}
+
+/* footer */
+.footer {
+  text-align: center;
+  background-color: rgb(105, 98, 98);
+  padding: 50px 10px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.footer_nav_bar a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-family: font1;
+}
+
+.footer p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.footer div h3 {
+  color: white;
+  font-weight: unset;
+}
+
+.footer div p {
+  font-family: font3;
+}
+
+.download_on_gp {
+  margin-top: 20px;
+  border: 1px solid white;
+  height: 40px;
+  border-radius: 7px;
+  outline: none;
+}
+
+.download_on_as {
+  margin-right: 10px;
+  margin-top: 20px;
+  border: 1px solid white;
+  height: 40px;
+  border-radius: 7px;
+  outline: none;
+}
+
+.footer_subscribe {
+  /* width: 200px; */
+  padding: 10px 20px;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  margin-right: 5px;
+}
+
+.subscribe_button {
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 2px;
+  background-color: #1a86af;
+  outline: none;
+  color: white;
+}
+
+.subscribe_button:hover {
+  cursor: pointer;
+  background-color: #abd9ec;
+  color: black;
+  outline: none;
+
+}

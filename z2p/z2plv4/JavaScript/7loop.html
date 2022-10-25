@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop</title>
+</head>
+
+<body>
+    <script>
+        // loops
+        // for loop
+        document.write('<h1>Loop Lesson</h1>');
+        document.write('<h1>For Loop</h1>');
+
+        for (let i = 1; i <= 5; i++) {
+            document.write('<h4>Hello JS</h4>');
+        }
+
+
+        // 12 ali
+        for (let j = 1; j < 12; j++) {
+            document.write(`<h2>12 x ${j} = ${12 * j}</h2>`);
+        }
+
+
+        // *****
+        // *****
+        // *****
+        // *****
+        // *****
+        for (let i = 0; i < 5; i++) {
+            for (let j = 0; j < 5; j++) {
+                document.write('*');
+            }
+            document.write('<br>');
+
+        }
+
+        // *
+        // **
+        // ***
+        // ****
+        // *****
+        for (let x = 0; x < 5; x++) {
+            for (let y = 0; y <= x; y++) {
+                document.write('*');
+
+            }
+            document.write('<br>');
+        }
+
+        // assignment
+        // *****
+        // ****
+        // ***
+        // **
+        // *
+        document.write('<h1>Assignment</h1>');
+        for (let x = 5; x > 0; x--) {
+            for (let y = 0; y < x; y++) {
+                document.write('*')
+            }
+            document.write('<br>');
+        }
+
+        // white loop
+        let num1 = 1;
+        while (num1 < 5) {
+            document.write(`<h2>While loop number is ${num1}</h2>`);
+            num1++;
+        }
+
+        // do while loop
+        let num2 = 1;
+        do {
+            document.write(`<h2>Do while loop number is ${num2}</h2>`);
+            num2++;
+        } while (num2 < 5)
+    </script>
+</body>
+
+</html>

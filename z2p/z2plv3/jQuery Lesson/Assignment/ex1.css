@@ -1,0 +1,39 @@
+body {
+    margin: 10%;
+    font-family: sans-serif;
+}
+
+/* Name age spouse */
+input#name,
+input#age,
+input#spouse {
+    padding: 10px;
+    padding-left: 20px;
+    background-color: #d8d8d8;
+    border: none;
+    font-size: 15px;
+    outline: none;
+}
+
+/* radio btn */
+input#single,
+input#married {
+    margin-left: 20px;
+    outline: none;
+}
+input#single:checked,
+input#married:checked{
+    accent-color:black;
+    
+}
+
+
+/* save btn */
+input#save {
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 30px;
+    color: white;
+    outline: none;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Day 2</title>
+    <script src="jquery.min.js"></script>
+    <script>
+        $(function () {
+
+            // onclick
+            $("#btn1").on("click", function () {
+                alert("Click OK");
+            });
+
+            // callBack
+            $("#btn2").on("click", function () {
+                $("#title1").hide("slow", function () {
+                    alert("Title Hid Done!");
+                });
+            });
+            // preventDefault
+            $("#google").on("click", function (e) {
+                alert("Link Can't go, for closed by default");
+                e.preventDefault();
+            });
+
+            $("#myform").on("submit", function (e) {
+                var email = $("input[name='email']").val();
+
+                alert(`Can't go with this ${email} email address!`);
+                e.preventDefault();
+            });
+
+            // change value on focus
+            $("#change").on("focus", function () {
+                var total = Number($("#total").val());
+                var payamount = Number($("#payamount").val());
+                var change = total - payamount;
+                $(this).val(change);
+            });
+
+            // select year and hide major when first year
+            $("#year").on("click", function () {
+                var year = $("#year").val();
+                $("#major").hide();
+                if (year > 1) {
+                    $("#major").show();
+                } else {
+                    $("#major").hide();
+                }
+
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <h2 id="title1">jQuery Events</h2>
+    <button id="btn1">Click Here!</button><br>
+    <button id="btn2">Click to hide Title</button><br><br>
+
+    <!-- preventDefault -->
+    <a href="https://www.google.com" target="_blank" id="#google">Go to Google</a><br><br>
+
+    <form action="https://www.google.com" method="get" id="myform">
+        <input type="text" name="name" id="name" placeholder="name"><br>
+        <input type="email" name="email" id="email"><br>
+        <input type="password" name="password" id="password"><br>
+        <input type="submit" name="submit" id="submit" value="Save"><br><br>
+    </form>
+
+    <!-- input focus when focus-->
+    <form action="" id="myform2">
+        <input type="number" name="total" id="total"><br>
+        <input type="number" name="payamount" id="payamount"><br>
+        <input type="number" name="change" id="change"><br>
+    </form><br>
+
+    <!-- select year -->
+    <select name="type" id="year">
+        <optgroup label="Select Year">
+            <option value="1">First Year</option>
+            <option value="2">Second Year</option>
+            <option value="3">Third Year</option>
+        </optgroup>
+    </select><br><br>
+
+    <!-- select major -->
+    <div id="major">
+        <input type="radio" name="major" id="software"><label for="software">Software</label>
+        <input type="radio" name="major" id="hardware"><label for="hardware">Hardware</label>
+    </div>
+
+</body>
+
+</html>

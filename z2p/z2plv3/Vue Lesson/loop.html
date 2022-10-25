@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+</head>
+
+
+
+<body>
+    <div id="app">
+
+        <!-- normal loop -->
+        <ul>
+            <li v-for="item in colors">
+                {{item}}
+            </li>
+        </ul>
+
+        <!-- array of object loop -->
+        <p>Students</p>
+        <ul>
+            <li v-for="item in students">
+                {{item.name}}-{{item.age}}-{{item.gender}}
+            </li>
+        </ul>
+
+        <!-- getting girls row -->
+        {{girls}}
+
+        <!-- students table -->
+        <p>Students Table</p>
+        <table border="1" cellpadding="15" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Gender</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr v-for="(item,index) in students">
+                    <td>{{++index}}</td>
+                    <td>{{item.name}}</td>
+                    <td>{{item.age}}</td>
+                    <td>{{item.gender}}</td>
+                    <td>
+                        <button @click="detail(--index)">detail</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+
+
+    <script>
+        const { createApp } = Vue
+
+        createApp({
+            data() {
+                return {
+                    massage: 'Hello Vue',
+                    colors: ['red', 'blue', 'yellow'],
+                    students: [
+                        { name: 'Ma Ma', age: 11, gender: 'female' },
+                        { name: 'Maung Maung', age: 21, gender: 'male' },
+                        { name: 'Tun Tun', age: 14, gender: 'male' },
+                    ]
+                }
+            },
+
+            methods: {
+                detail(index) {
+                    let row=this.students[index];
+                    alert(`${row.name}-${row.age}-${row.gender}`)
+                }
+            },
+
+            computed: {
+                girls() {
+                    return this.students.filter(row => row.gender == 'female')
+                }
+            }
+
+        }).mount('#app')
+    </script>
+</body>
+
+</html>

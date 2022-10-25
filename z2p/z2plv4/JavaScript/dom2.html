@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom 2</title>
+</head>
+
+<body>
+    <h1 id="heading" onclick=changeColor()>Create Element</h1>
+    <button onclick=addElement()>Click</button>
+    <br> <br>
+    <input type="text" name="name" id="name">
+    <button onclick=addName()>Add</button>
+    <ul id="ulist">
+        <li>Bo Bo Aung</li>
+    </ul>
+
+    <script>
+        function addElement() {
+            // alert('hello');
+            let h3 = document.createElement('h3');
+            console.log(h3);
+
+            h3.innerHTML = 'new element'
+            document.body.appendChild(h3);
+        }
+
+        function addName(){
+            let name = document.querySelector('#name').value;
+            console.log(name);
+
+            let li = document.createElement('li');
+            li.innerHTML = name;
+            console.log(name);
+
+            let ul = document.querySelector('#ulist');
+            ul.appendChild(li);
+
+
+        }
+
+        function changeColor(){
+            // alert('hello');
+           let heading = document.querySelector('#heading');
+           let attr = heading.getAttribute('style');
+           if(attr){
+            heading.removeAttribute('style')
+           }
+
+           else{
+            heading.setAttribute('style', 'color: blue;')
+           }
+
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom 1</title>
+</head>
+
+<body>
+    <h1 id="head1">Dom Selector</h1>
+    <h3 id="head2">Language</h3>
+    <p class="lang">HTML</p>
+    <p class="lang">CSS</p>
+    <p class="lang">JavaScript</p>
+    <h3 id="head3"></h3>
+    <p class="e_p"></p>
+
+    <button onclick="onClick()">Click Me</button>
+
+    <script>
+        function onClick() {
+            let head1 = document.getElementById('head1');
+            console.log('head1');
+
+            let head2 = document.getElementById('head2');
+            console.log('head2');
+
+            let add1 = document.getElementById('head3');
+            console.log(add1);
+            add1.innerHTML = '<i>This is inner html</i>';
+
+            // class
+            let lang1 = document.getElementsByClassName('lang');
+            console.log(lang1);
+
+            let add2 = document.getElementsByClassName('e_p');
+            console.log(add2);
+            add2.innerHTML = '<i>This is added inner Html</i>';
+
+            // query selector
+            let q1 = document.querySelector('#head1');
+            console.log(q1.innerHTML);
+
+            let q2 = document.querySelector('.lang');
+            console.log(q2);
+
+            let q3 = document.querySelectorAll('.lang');
+            console.log(q3);
+        }
+    </script>
+</body>
+
+</html>

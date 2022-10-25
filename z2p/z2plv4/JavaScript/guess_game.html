@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess Game</title>
+</head>
+
+<body>
+    <script>
+        let secret_num = 5;
+        let guess_num = prompt('Welcome to the Game! Guess a lucky number');
+        while (secret_num != guess_num) {
+            if (guess_num > secret_num) {
+                alert('Highter Number and try again! ');
+            }
+            else {
+                alert('Lower Number and try again!');
+            }
+            guess_num = prompt('Welcome to the Game! Guess a lucky number');
+        }
+        alert('Correct Lucky Number!');
+    </script>
+</body>
+
+</html>

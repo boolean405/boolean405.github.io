@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Install Vue</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+</head>
+
+<body>
+    <div id="app">{{ message }}
+        <p>{{name}}</p>
+
+        <!-- raw html -->
+        <span v-html="info"></span>
+
+        <!-- attribute -->
+        <img v-bind:src="photo" alt="" width="200">
+        <button :disabled="isButtonDisabled">Button</button>
+        <p v-if="seen">Now you see me</p><br>
+        <button @click="seen=!seen">Change</button>
+
+        <button @click="inverse">Inverse Text</button>
+    </div>
+
+    <script>
+        const { createApp } = Vue
+
+        createApp({
+            data() {
+                return {
+                    message: 'Hello Vue!',
+                    name: 'Bo Bo Aung',
+                    info: "<h3> I'm web developer </h3>",
+                    photo: 'naruto.jpg',
+                    isButtonDisabled: true,
+                    seen: true,
+
+
+
+                }
+            },
+
+            methods: {
+                inverse() {
+                    this.name = this.name.split('').reverse().join('')
+                }
+            }
+        }).mount('#app')
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+*{
+    font-family: 'SourceSanPro_Regular';
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'SourceSanPro_Bold';
+}
+
+.custom_bgcolor{
+    background-color: #0F172B;
+}
+
+/* slider */
+.carousel-item img{
+    height: 70vh;
+    object-fit: cover;
+}
+
+/* join section */
+#join_section{
+    background: url(../img/joinbanner.png) no-repeat center center fixed;
+    background-size: cover;
+}

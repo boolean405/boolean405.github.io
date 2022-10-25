@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tab</title>
+  <style>
+    ul.link-wapper{
+      list-style: none;
+      text-align: center;
+    }
+
+    ul.link-wapper li{
+      display: inline-block;
+      padding: 10px;
+    }
+
+    ul.link-wapper li a{
+      text-decoration: none;
+      color: black;
+      padding: 10px;
+    }
+
+    ul.link-wapper li a.active{
+        color: #0037ff;
+        border-bottom: 1px solid red;
+    }
+
+    .content{
+      max-width: 800px;
+      background-color: antiquewhite;
+      padding: 20px;
+      margin: 0 auto;
+      display: none;
+    }
+  </style>
+
+  <script src="jquery.min.js"></script>
+  <script>
+    $(function (param) { 
+      $('.content').first().slideDown();
+
+      $('ul.link-wapper li a').on("click",function (event) { 
+          var current_tab = $(this);
+          $('ul.link-wapper li a').removeClass('active');
+          current_tab.addClass('active');
+
+          $('.content').slideUp();
+          current_tab_href = current_tab.attr('href'); // #about
+          $(current_tab_href).slideDown(); // $('#about')
+
+          event.preventDefault();
+      })
+    })
+  </script>
+</head>
+<body>
+  <div class="tab">
+    <!-- Nav -->
+    <ul class="link-wapper">
+      <li>
+        <a href="#home" class="active">Home</a>
+      </li>
+      <li>
+        <a href="#about">About</a>
+      </li>
+      <li>
+        <a href="#contact">Contact</a>
+      </li>
+      <li>
+        <a href="#shop">Shop</a>
+      </li>
+    </ul>
+
+    <!-- Content -->
+    <div class="content" id="home">
+      <h2>Home Tab</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, fuga neque autem est fugit placeat mollitia sit ducimus. Quidem voluptatum blanditiis porro excepturi eaque atque ad at officia illo eligendi!</p>
+    </div>
+
+    <div class="content" id="about">
+      <h2>About Tab</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, fuga neque autem est fugit placeat mollitia sit ducimus. Quidem voluptatum blanditiis porro excepturi eaque atque ad at officia illo eligendi!</p>
+    </div>
+
+    <div class="content" id="contact">
+      <h2>Contact Tab</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, fuga neque autem est fugit placeat mollitia sit ducimus. Quidem voluptatum blanditiis porro excepturi eaque atque ad at officia illo eligendi!</p>
+    </div>
+
+    <div class="content" id="shop">
+      <h2>Shop Tab</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, fuga neque autem est fugit placeat mollitia sit ducimus. Quidem voluptatum blanditiis porro excepturi eaque atque ad at officia illo eligendi!</p>
+    </div>
+  </div>
+</body>
+</html>
+
+<!-- // 1 - a => active class remove 
+// 2 - current a => add class active 
+// ------ hide all content
+// 3 - get href attr value of current a
+// 4 - show related content - current attr href  -->

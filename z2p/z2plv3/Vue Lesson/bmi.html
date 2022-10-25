@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <!-- vue online connect -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+</head>
+
+<body>
+
+    <div id="app">
+        <form action="" @submit.prevent="calculate">
+
+            Feed: <input type="text" name="feet" id="feet" v-model="feed"><br><br>
+
+            Inches: <input type="text" name="inches" id="inches" v-model="inches"><br><br>
+
+            Pound: <input type="text" name="pound" id="pound" v-model="pound"><br><br>
+
+            <button>Calculate</button>
+
+            <br><br>
+            <!-- under weight -->
+            <p v-if="bmi > 0 && bmi <= 18.5">You are Under Weight. Eat More!</p>
+
+            <!-- normal weight -->
+            <p v-if="bmi > 18.5 && bmi < 25">You are Normal Weight. Stay Turn!</p>
+
+            <!-- over weight -->
+            <p v-if="bmi >=25 && bmi < 30">You are Over Weight. Take Regular Exercise!</p>
+
+            <!-- obesity -->
+            <p v-if="bmi >=30">You are Obesity. You must go to hostipal!</p>
+
+        </form>
+    </div>
+
+    <script>
+        const { createApp } = Vue
+
+        createApp({
+            data() {
+                return {
+                    feed: '',
+                    inches: '',
+                    pound: '',
+                    bmi: 0,
+                }
+            },
+
+            methods: {
+                calculate() {
+
+                    // inches to feet
+                    var inches_to_feet = Number(this.inches) / 12;
+
+                    // total feet
+                    var feet = Number(this.feed) + inches_to_feet;
+
+                    // height meter
+                    var height_meter = 0.3048 * feet;
+
+                    // height meter square
+                    var height_meter_square = Math.pow(height_meter, 2)
+
+                    // pound to kg
+                    var pound = Number(this.pound);
+                    var weight_kg = 0.453592 * pound;
+
+                    // bmi value in kg per meter square
+                    var bmi = weight_kg / height_meter_square;
+
+                    // bmi value with 1 decimal
+                    this.bmi = bmi.toFixed(1);
+
+                }
+            }
+        }).mount('#app')
+
+
+
+    </script>
+</body>
+
+</html>

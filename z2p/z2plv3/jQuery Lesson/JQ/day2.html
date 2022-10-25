@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 1</title>
+    <script src="jquery.min.js"></script>
+    <script>
+        // jq
+        $(document).ready(function () {
+            var h2 = $("#myh2");
+            console.log(h2);
+
+            var myp = $(".myp");
+            console.log(myp);
+
+            var myp = $("p.myp");
+            console.log(myp);
+
+            var myp = $("div.myp");
+            console.log(myp);
+
+            var btn = $("button");
+            console.log(btn);
+
+            var first_li = $("#lap_brands ul li:first");
+            console.log(first_li);
+
+
+            var first_li = $("#lap_brands > div ul li:first");
+            console.log(first_li);
+
+            // wrong method
+            // if(first_li){
+            //     console.log("Getting list A with wrong method");
+            // }
+
+            if (first_li.length) {
+                console.log("Getting list A with True Method");
+            }
+
+            // H. Refining and Filtering Selection
+            var h1 = $("div.foo").has("p");
+            console.log(h1);
+
+            var h2 = $("h1").not(".bar");
+            console.log(h2);
+
+            var h3 = $("lap_brands ul li").filter(".best");
+            console.log(h3);
+
+            var h4 = $("lap_brands ul li").first();
+            console.log(h4);
+
+            var h5 = $("lap_brands ul li").eq(5);
+            console.log(h5);
+
+            // I. Selecting Form Elements
+            var i1 = $("form :checked");
+            console.log(i1);
+
+            var i2 = $("form :disabled");
+            console.log(i2);
+
+            var i3 = $("form :enabled");
+            console.log(i3);
+
+            var i4 =$("form :input");
+            console.log(i4);
+
+            var i5 = $("form :selected");
+            console.log(i5);
+
+        });
+
+    </script>
+</head>
+
+<body>
+
+    <h2 id="myh2">Hello jQ</h2>
+    <p class="myp">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque harum, cupiditate minima soluta
+        debitis corporis nesciunt. Porro, deserunt a? Possimus molestiae ullam repudiandae assumenda, laborum qui
+        ducimus officia delectus repellat.
+    </p>
+    <div class="myp">This is div paragraph.</div>
+    <button>Click Me</button>
+
+
+    <!-- H. Refining and Filtering Selection -->
+
+    <div class="foo">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, officiis?
+    </div>
+    <div class="foo">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, officiis?
+        </p>
+    </div>
+
+
+    <h1 class="are">Not Action</h1>
+    <h1 class="bar">Not Action</h1>
+    <h1 class="car">Not Action</h1>
+
+
+    <div id="lap_brands">
+        <div>
+            <ul>
+                <li class="best">Apple</li>
+                <li class="normal">Acer</li>
+                <li class="low">Lenovo</li>
+                <li class="normal">HP</li>
+                <li class="low">Xiaomi</li>
+                <li class="low">Dell</li>
+                <li class="best">MSI</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- I. Slecting Form Elements -->
+    <form action="">
+        <!-- Check Box -->
+        <input type="checkbox" name="html" id="html">
+        <label for="html"></label>
+
+        <input type="checkbox" name="css" id="css">
+        <label for="css">CSS</label>
+
+        <input type="checkbox" name="jquery" id="jquery" checked>
+        <label for="jquery">jQuery</label>
+
+        <!-- radio button -->
+        <input type="radio" name="gender" id="male">
+        <label for="male">Male</label>
+
+        <input type="radio" name="gender" id="female">
+        <label for="gender">Female</label>
+
+        <!-- input type with disable -->
+        <input type="button" name="click1" id="click1" placeholder="Click1">
+
+        <input type="button" name="click2" id="click2" placeholder="Click2" disabled>
+
+        <textarea name="adddress" id="address" cols="30" rows="10" placeholder="Address" disabled></textarea>
+
+        <!-- selected items in option -->
+        <select name="uni_year" id="uni_year">
+            <option value="1">First Year</option>
+            <option value="2" selected>Second Year</option>
+            <option value="3">Third Year</option>
+        </select>
+
+    </form>
+
+
+
+    <script>
+
+        // core js
+        var h2 = document.getElementById("myh2");
+        console.log(h2);
+
+        // jq
+        var h2 = $("#myh2");
+        console.log(h2);
+
+    </script>
+
+</body>
+
+</html>

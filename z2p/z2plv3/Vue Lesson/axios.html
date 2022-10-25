@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axios</title>
+
+    <!-- vue -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+    <!-- axiios api -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+</head>
+
+<body>
+    <div id="app">
+        <button @click="getData">Get Data</button>
+        <div v-for="item in mydata">    
+            {{item.name.common}}
+            <img :src="item.flags.png" alt="">
+
+        </div>
+       
+    </div>
+
+    <script>
+        const { createApp } = Vue
+        createApp({
+            data() {
+                return {
+                    message: 'Hello Bo Bo!',
+                    mydata: [],
+                }
+            },
+
+            // mounted(){
+            //     this.getData();
+            // },
+
+            methods: {
+                // axios
+                getData() {
+                    axios.get('https://restcountries.com/v3.1/all')
+                    .then(response => {
+                        this.mydata=response.data
+                    })
+                }
+            }
+        }).mount('#app')
+    </script>
+
+
+
+
+</body>
+
+</html>

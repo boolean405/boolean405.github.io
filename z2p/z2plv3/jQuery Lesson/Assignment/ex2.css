@@ -1,0 +1,31 @@
+body {
+    margin: 10%;
+    font-family: sans-serif;
+}
+
+/* name */
+input#name {
+    padding: 10px;
+    padding-left: 20px;
+    background-color: #d8d8d8;
+    border: none;
+    font-size: 15px;
+
+}
+
+input[type='checkbox'] {
+    outline: none;
+}
+
+input#save {
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 30px;
+    color: white;
+    outline: none;
+}
+input#save:hover{
+    background-color: rgb(236, 106, 106);
+
+}

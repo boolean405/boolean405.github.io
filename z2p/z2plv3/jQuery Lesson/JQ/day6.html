@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.min.js"></script>
+
+    <script>
+        $(function () {
+            $('#click1').on('click', function () {
+
+                // getter
+                var attrvalue = $('#link1').attr('href');
+                var mytext = $('#link1').text();
+                var name = $('#username').val();
+                console.log(name);
+
+                // setter
+                $('#link1').attr('href', 'https://twitter.com');
+                $('#link1').text('Go to Twitter');
+                $('#username').val('Bo Bo Aung');
+
+            });
+            $('#get_data').on('click', function () {
+
+                $.get('url', function (response) {
+
+                    if (response.success) {
+                        var data = "";
+
+                        var data = response.data.memes
+                        $.each(memes, function (i, v) {
+                            data += `<img src='${v.url}' `;
+                        });
+
+                        $('#memes_get').html(data)
+                    }
+                });
+
+
+            });
+            $('#post_data').on('click', function () {
+
+                $.post('https://api.imgflip.com/caption_image', {
+                    template_id: 181913649,
+                    username: 'thetpainghtutfly',
+                    password: 'thetpainghtutfly',
+                    // text0:,
+                    // text1:,
+                    boxes: [
+                        { 'text': 'Hello' },
+                        { 'text': 'Hi' }
+                    ]
+                }, function (response) {
+                    if (response.success) {
+                        var data = `<img src='${response.data.url}', alt=''>`
+                        $('#memes').html(data);
+                    }
+                })
+            })
+            // post
+
+
+
+        });
+    </script>
+</head>
+
+<body>
+    <a href="https://google.com" id="link1">Go to google</a><br><br>
+
+    <input type="text" name="username" id="username"><br><br>
+
+    <button id="click1">Click</button><br><br>
+
+    <button id="get_data">Get Data</button><br><br>
+    <button id="post_data">Post Data</button>
+
+    <!-- memes -->
+    <div id="memes">
+
+    </div>
+</body>
+
+</html>

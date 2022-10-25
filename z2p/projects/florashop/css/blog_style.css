@@ -1,0 +1,40 @@
+.contact_header {}
+
+.wr_grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 50px 10%;
+
+}
+
+.wr_grid img {
+    /* width: 50%; */
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+
+.py_grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 50px 10%;
+}
+
+.py_grid img {
+    /* width: 50%; */
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+.ly_grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 50px 10%;
+
+}
+
+.ly_grid img {
+    /* width: 50%; */
+    border-radius: 5px;
+    margin-right: 20px;
+}

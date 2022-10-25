@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom 4</title>
+</head>
+
+<body>
+    <table style="width: 300px; height: 200px;">
+
+        <tr>
+            <td onmouseover="changeColor(this.style.backgroundColor)" onmouseout="changeColor('transparent')"
+                style="background-color: red;">
+            </td>
+            <td onmouseover="changeColor(this.style.backgroundColor)" onmouseout="changeColor('transparent')"
+                style="background-color: green;">
+            </td>
+            <td onmouseover="changeColor(this.style.backgroundColor)" onmouseout="changeColor('transparent')"
+                style="background-color: blue;">
+            </td>
+        </tr>
+
+    </table>
+
+    <script>
+        function changeColor(bg) {
+            document.body.style.backgroundColor = bg;
+        }
+    </script>
+</body>
+
+</html>

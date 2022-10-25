@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom 3</title>
+</head>
+
+<body>
+    <h1 id="heading">Dom3 Heading</h1>
+    <button onclick="changeColor()">Change Color</button>
+
+    <br><br>
+    <img src="./Images/1.jpeg" alt="" id="image">
+    <br> <br>
+    <img src="./Images/2.png" alt="" id="image2" onmouseover="changeImg()" onmouseout="normalImg()">
+
+    <script>
+        function changeColor() {
+            let head = document.querySelector('#heading');
+
+            head.style.color = 'red';
+            head.style.backgroundColor = 'yellow';
+
+            let img = document.querySelector('#image');
+            img.style.width = '200px';
+        }
+
+        let image = document.querySelector('#image2');
+        function changeImg() {
+            image.style.width = '200px'
+
+        }
+
+        function normalImg() {
+            image.style.width = '100%';
+        }
+    </script>
+</body>
+
+</html>

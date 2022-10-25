@@ -1,0 +1,80 @@
+body {
+    margin: 5%;
+    font-family: sans-serif;
+    background-color: #dbd9db;
+}
+
+#scroll_bar {
+    height: 100px;
+    background-color: gray;
+    margin-bottom: 5%;
+    padding-bottom: 15px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+#scroll_bar:hover {
+    cursor: pointer;
+}
+
+#scroll_bar img {
+    height: 80px;
+    padding: 10px 20px;
+
+}
+
+/* right left */
+#right_left {
+    text-align: center;
+}
+
+/* left side */
+#left_side {
+    float: left;
+    margin-left: 5%;
+    margin-top: 30px
+}
+
+#left_side h2{
+    padding-top: 150px;
+
+}
+
+#left_side img {
+    /* height: 400px; */
+    width: 500px;
+}
+
+
+/* right side */
+#right_side {
+    text-align: left;
+    float: right;
+    margin-right: 5%;
+}
+
+#right_side input[type='text'] {
+    padding: 20px;
+    padding-right: 200px;
+    margin: 10px 0;
+    font-size: large;
+    border: 1px solid black;
+    outline: none;
+}
+
+/* button */
+#generate {
+    padding: 15px 30px;
+    font-size: large;
+    margin-top: 10px;
+    outline: none;
+    color: white;
+    background-color: red;
+    border: none;
+}
+
+#generate:hover {
+    background-color: rgb(223, 91, 91);
+    color: black;
+}

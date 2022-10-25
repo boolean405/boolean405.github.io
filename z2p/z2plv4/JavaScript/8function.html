@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+
+<body>
+    <script>
+        // function
+        function fun0() {
+            document.write('<h2>Hello World</h2>')
+        }
+        fun0();
+
+        function fun1(num1, num2) {
+            let result = num1 + num2;
+            document.write(`<h2>${result}</h2>`);
+        }
+        fun1(20, 30);
+
+        function fun2(num1 = 20, num2 = 10) {
+            let result = num1 - num2;
+            document.write(`<h2>${result}</h2>`);
+
+        }
+        fun2();
+        fun2(10, 5);
+
+        // objects
+        let phone = {
+            name: 'Xiaomi',
+            type: 'Redmi K40 Gamming',
+            price: '$200',
+
+        }
+        console.log(phone.name);
+        console.log(phone.type);
+        console.log(phone['price']);
+
+    </script>
+</body>
+
+</html>

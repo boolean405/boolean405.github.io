@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/shop_style.css" />
+  <link rel="stylesheet" href="../font_awesome/css/all.min.css" />
+  <link rel="icon" href="../images/favicon.ico" type="image/x-icon" />
+  <script src="../font_awesome/js/all.min.js"></script>
+</head>
+
+<body>
+  <!-- start nav -->
+  <nav class="nav_bar">
+    <div class="brand">
+      <img src="../images/logo.png" alt="" class="brand_logo" />
+      <p class="brand_name">Shwe Ayar Flora</p>
+    </div>
+    <ul>
+      <li><a href="../index.html" class="nav_item">Home</a></li>
+      <li><a href="./shop.html" class="nav_item">Shop</a></li>
+      <li><a href="./blog.html" class="nav_item">Blog</a></li>
+      <li><a href="./contact.html" class="nav_item">Contact</a></li>
+      <li><a href="./about.html" class="nav_item">About</a></li>
+      <li>
+        <a href="" class="nav_card"><i class="fa-solid fa-cart-shopping"></i></a>
+      </li>
+      <p class="card_count">3</p>
+    </ul>
+  </nav>
+  <!-- end nav -->
+
+  <!-- contact header -->
+  <div class="shop_grid">
+    <div>
+      <h2>Download App to get 10% OFF For New Users</h2>
+      <input class="download_on_as" type="image" name="" id="" src="../images/app-store.png" />
+
+      <input class="download_on_gp" type="image" name="" id="" src="../images/google-play-badge.png" />
+    </div>
+    <div class="dis_event">
+      <h2>
+        Up to 30% OFF Discount Event July 1 - 10
+        <i class="fa-solid fa-tag fa-beat"></i>
+      </h2>
+      <br />
+      <img src="../images/shop_page/30off.jpg" alt="" />
+    </div>
+    <div class="gift_code">
+      <h2>Gift Code for Today</h2>
+      <br />
+      <i class="fa-solid fa-gift fa-bounce"></i>
+      <h3>JK7D03VSGR</h3>
+      <i class="fa-solid fa-gift fa-bounce"></i>
+    </div>
+  </div>
+
+  <!-- start left side bar -->
+
+  <!-- start side table -->
+  <div class="side_table">
+    <table class="filter_table">
+      <tbody>
+        <tr>
+          <td>
+            <h3>Filter</h3>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="cat_filter">
+              <h3>Categories</h3>
+              <br />
+              <input type="checkbox" name="rose" id="rose" /><label for="rose">Rose</label><br /><br />
+              <input type="checkbox" name="lily" id="lily" /><label for="lily">Lily</label><br /><br />
+              <input type="checkbox" name="tulip" id="tulip" /><label for="tulip">Tulip</label><br /><br />
+              <input type="checkbox" name="freesia" id="freesia" /><label for="freesia">Freesia</label><br /><br />
+              <input type="checkbox" name="gladiolus" id="gladiolus" /><label
+                for="gladiolus">Gladiolus</label><br /><br />
+              <input type="checkbox" name="poppy" id="poppy" />
+              <label for="poppy">Poppy</label>
+              <br /><br />
+              <p>Other &emsp;<i class="fa-solid fa-angle-down"></i></p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="filer_rating">
+              <h3>Rating</h3>
+              <br />
+              <input type="checkbox" name="rating" id="rating" />&ensp;
+              <i class="fa-solid fa-star filter_star"></i>
+              <i class="fa-solid fa-star filter_star"></i>
+              <i class="fa-solid fa-star filter_star"></i>
+              <i class="fa-solid fa-star filter_star"></i>
+              <i class="fa-solid fa-star last_star"></i>
+              <span>above</span>
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <div class="filter_price">
+              <h3>Price range</h3>
+              <br />
+              <button disabled>Min</button>
+              <input type="number" name="price_min" id="price_min" min="10000" max="100000" step="5000"
+                placeholder="&emsp; &emsp; MMK" />
+              <br /><br />
+              <button class="set_price">Set Price</button>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <!-- end table -->
+  <br /><br />
+
+  <!-- start right product side -->
+  <div>
+    <!-- start search bar -->
+    <div class="right_pd_side">
+      <i class="fa-solid fa-magnifying-glass"></i>
+
+      <div>
+        <input type="search" name="product_search" id="product_search" placeholder="Search Products"
+          class="pd_search" />
+      </div>
+    </div>
+
+    <!-- end search bar -->
+
+    <!-- start proudct grid -->
+    <div>
+      <div class="pd_grid">
+        <div class="pd_grid_items">
+          <img src="../images/latest_products/1.jpg" alt="" class="pd_img" />
+          <p>White Rose</p>
+          <p>50000 MMK <span class="discount">60000 MMK</span></p>
+          <div>
+            <i class="fa-solid fa-star filter_star"></i>
+            <i class="fa-solid fa-star filter_star"></i>
+            <i class="fa-solid fa-star filter_star"></i>
+            <i class="fa-solid fa-star filter_star"></i>
+            <i class="fa-solid fa-star-half-stroke filter_star"></i>
+            <span>&emsp;(390)</span>
+          </div>
+          <button class="pd_atc">Add to Card</button>
+          <button>Buy Now</button>
+        </div>
+        <div class="pd_grid_items">
+          <img src="../images/latest_products/2.jpg" alt="" class="pd_img" />
+          <p>Cherry Lily</p>
+          <p>60000 MMK <span class="discount">70000 MMK</span></p>
+          <div>
+            <i class="fa-solid fa-star filter_star"></i>
+            <i class="fa-solid fa-star filter_star"></i>
+            <i class="fa-solid fa-star filter_star"></i>
+            <i class="fa-solid fa-star filter_star"></i>
+            <i class="fa-solid fa-star last_star"></i>
+            <span>&emsp;(492)</span>
+          </div>
+          <button class="pd_atc">Add to Card</button>
+          <button>Buy Now</button>
+        </div>
+        <div class="pd_grid_items">
+          <img src="../images/latest_products/3.jpg" alt="" class="pd_img" />
+          <p>Nezuko Tulip</p>
+          <p>20000 MMK <span class="discount">30000 MMK</span></p>
+          <div>
+            <i class="fa-solid fa-star filter_star"></i>
+            <i class="fa-solid fa-star filter_star"></i>
+            <i class="fa-solid fa-star filter_star"></i>
+            <i class="fa-solid fa-star filter_star"></i>
+            <i class="fa-solid fa-star last_star"></i>
+            <span>&emsp;(999)</span>
+          </div>
+          <button class="pd_atc">Add to Card</button>
+          <button>Buy Now</button>
+        </div>
+        <div class="pd_grid_items">
+          <img src="../images/latest_products/4.jpg" alt="" class="pd_img" />
+          <p>Kimitsu Orchid</p>
+          <p>50000 MMK <span class="discount">60000 MMK</span></p>
+          <div>
+            <i class="fa-solid fa-star filter_star"></i>
+            <i class="fa-solid fa-star filter_star"></i>
+            <i class="fa-solid fa-star filter_star"></i>
+            <i class="fa-solid fa-star filter_star"></i>
+            <i class="fa-solid fa-star-half-stroke filter_star"></i>
+            <span>&emsp;(840)</span>
+          </div>
+          <button class="pd_atc">Add to Card</button>
+          <button>Buy Now</button>
+        </div>
+        <div class="pd_grid_items">
+          <img src="../images/latest_products/5.jpg" alt="" class="pd_img" />
+          <p>Yaiba Freesia</p>
+          <p>55000 MMK <span class="discount">65000 MMK</span></p>
+          <div>
+            <i class="fa-solid fa-star filter_star"></i>
+            <i class="fa-solid fa-star filter_star"></i>
+            <i class="fa-solid fa-star filter_star"></i>
+            <i class="fa-solid fa-star filter_star"></i>
+            <i class="fa-solid fa-star last_star"></i>
+            <span>&emsp;(337)</span>
+          </div>
+          <button class="pd_atc">Add to Card</button>
+          <button>Buy Now</button>
+        </div>
+        <div class="pd_grid_items">
+          <img src="../images/latest_products/6.jpg" alt="" class="pd_img" />
+          <p>Takikon Gladiolus</p>
+          <p>40000 MMK <span class="discount">50000 MMK</span></p>
+          <div>
+            <i class="fa-solid fa-star filter_star"></i>
+            <i class="fa-solid fa-star filter_star"></i>
+            <i class="fa-solid fa-star filter_star"></i>
+            <i class="fa-solid fa-star filter_star"></i>
+            <i class="fa-solid fa-star-half-stroke filter_star"></i>
+            <span>&emsp;(879)</span>
+          </div>
+          <button class="pd_atc">Add to Card</button>
+          <button>Buy Now</button>
+        </div>
+        <div class="pd_grid_items">
+          <img src="../images/latest_products/7.jpg" alt="" class="pd_img" />
+          <p>Daisuki Anemone</p>
+          <p>50000 MMK <span class="discount">60000 MMK</span></p>
+          <div>
+            <i class="fa-solid fa-star filter_star"></i>
+            <i class="fa-solid fa-star filter_star"></i>
+            <i class="fa-solid fa-star filter_star"></i>
+            <i class="fa-solid fa-star filter_star"></i>
+            <i class="fa-solid fa-star last_star"></i>
+            <span>&emsp;(630)</span>
+          </div>
+          <button class="pd_atc">Add to Card</button>
+          <button>Buy Now</button>
+        </div>
+        <div class="pd_grid_items">
+          <img src="../images/latest_products/8.jpg" alt="" class="pd_img" />
+          <p>Kire Poppy</p>
+          <p>60000 MMK <span class="discount">70000 MMK</span></p>
+          <div>
+            <i class="fa-solid fa-star filter_star"></i>
+            <i class="fa-solid fa-star filter_star"></i>
+            <i class="fa-solid fa-star filter_star"></i>
+            <i class="fa-solid fa-star filter_star"></i>
+            <i class="fa-solid fa-star-half-stroke filter_star"></i>
+
+            <span>&emsp;(630)</span>
+          </div>
+          <button class="pd_atc">Add to Card</button>
+          <button>Buy Now</button>
+        </div>
+        <div class="pd_grid_items">
+          <img src="../images/shop_page/p1.webp" alt="" class="pd_img" />
+          <p>Dear Lily</p>
+          <p>60000 MMK <span class="discount">70000 MMK</span></p>
+          <div>
+            <i class="fa-solid fa-star filter_star"></i>
+            <i class="fa-solid fa-star filter_star"></i>
+            <i class="fa-solid fa-star filter_star"></i>
+            <i class="fa-solid fa-star filter_star"></i>
+            <i class="fa-solid fa-star last_star"></i>
+            <span>&emsp;(398)</span>
+          </div>
+          <button class="pd_atc">Add to Card</button>
+          <button>Buy Now</button>
+        </div>
+        <div class="pd_grid_items">
+          <img src="../images/shop_page/p2.webp" alt="" class="pd_img" />
+          <p>Lovely Lily</p>
+          <p>60000 MMK <span class="discount">70000 MMK</span></p>
+          <div>
+            <i class="fa-solid fa-star filter_star"></i>
+            <i class="fa-solid fa-star filter_star"></i>
+            <i class="fa-solid fa-star filter_star"></i>
+            <i class="fa-solid fa-star filter_star"></i>
+            <i class="fa-solid fa-star last_star"></i>
+            <span>&emsp;(939)</span>
+          </div>
+          <button class="pd_atc">Add to Card</button>
+          <button>Buy Now</button>
+        </div>
+        <div class="pd_grid_items">
+          <img src="../images/shop_page/p3.webp" alt="" class="pd_img" />
+          <p>Orange Tulip</p>
+          <p>20000 MMK <span class="discount">30000 MMK</span></p>
+          <div>
+            <i class="fa-solid fa-star filter_star"></i>
+            <i class="fa-solid fa-star filter_star"></i>
+            <i class="fa-solid fa-star filter_star"></i>
+            <i class="fa-solid fa-star filter_star"></i>
+            <i class="fa-solid fa-star last_star"></i>
+            <span>&emsp;(189)</span>
+          </div>
+          <button class="pd_atc">Add to Card</button>
+          <button>Buy Now</button>
+        </div>
+        <div class="pd_grid_items">
+          <img src="../images/shop_page/p4.webp" alt="" class="pd_img" />
+          <p>Child Orchid</p>
+          <p>50000 MMK <span class="discount">60000 MMK</span></p>
+          <div>
+            <i class="fa-solid fa-star filter_star"></i>
+            <i class="fa-solid fa-star filter_star"></i>
+            <i class="fa-solid fa-star filter_star"></i>
+            <i class="fa-solid fa-star filter_star"></i>
+            <i class="fa-solid fa-star-half-stroke filter_star"></i>
+            <span>&emsp;(567)</span>
+          </div>
+          <button class="pd_atc">Add to Card</button>
+          <button>Buy Now</button>
+        </div>
+        <div class="pd_grid_items">
+          <img src="../images/shop_page/p5.webp" alt="" class="pd_img" />
+          <p>Pretty Gladiolus</p>
+          <p>40000 MMK <span class="discount">50000 MMK</span></p>
+          <div>
+            <i class="fa-solid fa-star filter_star"></i>
+            <i class="fa-solid fa-star filter_star"></i>
+            <i class="fa-solid fa-star filter_star"></i>
+            <i class="fa-solid fa-star filter_star"></i>
+            <i class="fa-solid fa-star-half-stroke filter_star"></i>
+            <span>&emsp;(765)</span>
+          </div>
+          <button class="pd_atc">Add to Card</button>
+          <button>Buy Now</button>
+        </div>
+        <div class="pd_grid_items">
+          <img src="../images/shop_page/p6.webp" alt="" class="pd_img" />
+          <p>Anya Anemone</p>
+          <p>50000 MMK <span class="discount">60000 MMK</span></p>
+          <div>
+            <i class="fa-solid fa-star filter_star"></i>
+            <i class="fa-solid fa-star filter_star"></i>
+            <i class="fa-solid fa-star filter_star"></i>
+            <i class="fa-solid fa-star filter_star"></i>
+            <i class="fa-solid fa-star last_star"></i>
+            <span>&emsp;(99)</span>
+          </div>
+          <button class="pd_atc">Add to Card</button>
+          <button>Buy Now</button>
+        </div>
+        <div class="pd_grid_items">
+          <img src="../images/shop_page/p7.webp" alt="" class="pd_img" />
+          <p>Kokyu Poppy</p>
+          <p>60000 MMK <span class="discount">70000 MMK</span></p>
+          <div>
+            <i class="fa-solid fa-star filter_star"></i>
+            <i class="fa-solid fa-star filter_star"></i>
+            <i class="fa-solid fa-star filter_star"></i>
+            <i class="fa-solid fa-star filter_star"></i>
+            <i class="fa-solid fa-star-half-stroke filter_star"></i>
+
+            <span>&emsp;(832)</span>
+          </div>
+          <button class="pd_atc">Add to Card</button>
+          <button>Buy Now</button>
+        </div>
+        <div class="pd_grid_items">
+          <img src="../images/shop_page/p8.webp" alt="" class="pd_img" />
+          <p>Gaint Rose</p>
+          <p>60000 MMK <span class="discount">70000 MMK</span></p>
+          <div>
+            <i class="fa-solid fa-star filter_star"></i>
+            <i class="fa-solid fa-star filter_star"></i>
+            <i class="fa-solid fa-star filter_star"></i>
+            <i class="fa-solid fa-star filter_star"></i>
+            <i class="fa-solid fa-star-half-stroke filter_star"></i>
+
+            <span>&emsp;(275)</span>
+          </div>
+          <button class="pd_atc">Add to Card</button>
+          <button>Buy Now</button>
+        </div>
+        <div class="pd_grid_items">
+          <img src="../images/shop_page/p9.webp" alt="" class="pd_img" />
+          <p>Yasoku Lily</p>
+          <p>60000 MMK <span class="discount">70000 MMK</span></p>
+          <div>
+            <i class="fa-solid fa-star filter_star"></i>
+            <i class="fa-solid fa-star filter_star"></i>
+            <i class="fa-solid fa-star filter_star"></i>
+            <i class="fa-solid fa-star filter_star"></i>
+            <i class="fa-solid fa-star last_star"></i>
+            <span>&emsp;(329)</span>
+          </div>
+          <button class="pd_atc">Add to Card</button>
+          <button>Buy Now</button>
+        </div>
+        <div class="pd_grid_items">
+          <img src="../images/shop_page/p10.webp" alt="" class="pd_img" />
+          <p>Hearly Tulip</p>
+          <p>20000 MMK <span class="discount">30000 MMK</span></p>
+          <div>
+            <i class="fa-solid fa-star filter_star"></i>
+            <i class="fa-solid fa-star filter_star"></i>
+            <i class="fa-solid fa-star filter_star"></i>
+            <i class="fa-solid fa-star filter_star"></i>
+            <i class="fa-solid fa-star last_star"></i>
+            <span>&emsp;(449)</span>
+          </div>
+          <button class="pd_atc">Add to Card</button>
+          <button>Buy Now</button>
+        </div>
+        <div class="pd_grid_items">
+          <img src="../images/shop_page/p11.webp" alt="" class="pd_img" />
+          <p>Gakuse Orchid</p>
+          <p>50000 MMK <span class="discount">60000 MMK</span></p>
+          <div>
+            <i class="fa-solid fa-star filter_star"></i>
+            <i class="fa-solid fa-star filter_star"></i>
+            <i class="fa-solid fa-star filter_star"></i>
+            <i class="fa-solid fa-star filter_star"></i>
+            <i class="fa-solid fa-star-half-stroke filter_star"></i>
+            <span>&emsp;(883)</span>
+          </div>
+          <button class="pd_atc">Add to Card</button>
+          <button>Buy Now</button>
+        </div>
+        <div class="pd_grid_items">
+          <img src="../images/shop_page/p12.webp" alt="" class="pd_img" />
+          <p>Lovely Freesia</p>
+          <p>55000 MMK <span class="discount">65000 MMK</span></p>
+          <div>
+            <i class="fa-solid fa-star filter_star"></i>
+            <i class="fa-solid fa-star filter_star"></i>
+            <i class="fa-solid fa-star filter_star"></i>
+            <i class="fa-solid fa-star filter_star"></i>
+            <i class="fa-solid fa-star last_star"></i>
+            <span>&emsp;(739)</span>
+          </div>
+          <button class="pd_atc">Add to Card</button>
+          <button>Buy Now</button>
+        </div>
+      </div>
+    </div>
+    <!-- end proudct grid -->
+  </div>
+  <!-- end right product side -->
+
+  <!-- start load more -->
+  <div class="load_more">
+    <button class="load_more_btn">Load More</button>
+  </div>
+  <!-- end load more -->
+
+  <!-- start service -->
+  <div class="service">
+    <div>
+      <i class="fa-solid fa-truck-fast fa-3x"></i>
+      <p class="service_text">
+        <span class="service_title">Free Shipping</span><br />
+        For order frome 50,000 MMK
+      </p>
+    </div>
+    <div>
+      <i class="fa-solid fa-phone fa-3x"></i>
+      <p class="service_text">
+        <span class="service_title">Customer Service</span><br />
+        24/7 Online
+      </p>
+    </div>
+    <div>
+      <i class="fa-solid fa-shield-halved fa-3x"></i>
+      <p class="service_text">
+        <span class="service_title">100% Secuare Payment</span><br />
+        Secuare Payment
+      </p>
+    </div>
+    <div>
+      <i class="fa-solid fa-tag fa-3x"></i>
+      <p class="service_text">
+        <span class="service_title">Hot Offer</span><br />
+        Discount up to 90%
+      </p>
+    </div>
+  </div>
+  <!-- end service -->
+
+  <!-- start footer -->
+  <footer class="footer">
+    <div>
+      <h3>Shopping on App with more discounts</h3>
+      <input class="download_on_as" type="image" name="" id="" src="../images/app-store.png" />
+
+      <input class="download_on_gp" type="image" name="" id="" src="../images/google-play-badge.png" />
+    </div>
+
+    <div class="footer_nav_bar">
+      <a href="../index.html">Home</a>
+      <a href="./shop.html">Shop</a>
+      <a href="./blog.html">Blog</a>
+      <a href="./contact.html">Contact</a>
+      <a href="./about.html">About</a>
+      <p>
+        Designed By
+        <i class="fa-solid fa-heart"></i>
+        <a href="https://github.com/maungbo404">Bo Bo Aung</a> @2022
+      </p>
+      <a href="https://www.facebook.com/maungbo404" target="_blank"><i
+          class="fa-brands fa-facebook-square fa-2x"></i></a>
+      <a href="https://github.com/maungbo404" target="_blank"><i class="fa-brands fa-github-square fa-2x"></i></a>
+      <a href="https://twitter.com/maungbo404" target="_blank"><i class="fa-brands fa-twitter-square fa-2x"></i></a>
+    </div>
+
+    <div>
+      <h3>Subscribe</h3>
+      <p>
+        Subscribe for to get the latest contacts, <br />
+        new products, discounts,<br />
+        and more ... from Shwe Ayar Floral.
+      </p>
+      <input type="email" name="email" id="email" placeholder="Your Email" class="footer_subscribe" required />
+
+      <button class="subscribe_button">Subscribe</button>
+    </div>
+  </footer>
+  <!-- end footer -->
+</body>
+
+</html>

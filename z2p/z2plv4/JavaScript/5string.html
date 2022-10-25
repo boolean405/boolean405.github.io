@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String</title>
+</head>
+
+<body>
+    <script>
+        // string
+        let first_name = 'Bo Bo';
+        console.log(first_name);
+        let last_name = 'Aung';
+        console.log(last_name);
+
+        // length
+        console.log(first_name.length);
+        console.log(last_name.length);
+
+        // concat
+        let full_name = first_name.concat(' ', last_name);
+        console.log(full_name);
+        console.log(full_name.length);
+
+        console.log('My name is ' + full_name);
+        console.log(`My name is ${full_name}`)
+        console.log(full_name[3]);
+        console.log(full_name.toUpperCase());
+        console.log(full_name.toLowerCase());
+        console.log(full_name.substr(3, 2));
+
+
+        // trim
+        let job = ' Web Developer '
+        console.log(job);
+        console.log(job.trim());
+
+        // search
+        let sar_tar = 'Javascript is funny';
+        let sar_search = sar_tar.search('is');
+        console.log(sar_search);
+
+        // replace
+        let rep = 'I live in Dawei';
+        console.log(rep.replace('Dawei', 'Japan'));
+
+        // other
+        console.log('Hello \nWorld!');
+        console.log('\tBo Bo Aung');
+        console.log('I\'m Web Developer');
+
+
+    </script>
+</body>
+
+</html>
