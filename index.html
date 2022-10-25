@@ -36,24 +36,23 @@
 
 <body>
     <!-- start nav section -->
-    <div>
-        <nav class="navbar navbar-expand-lg bg-light">
-            <div class="container">
-                <a class="navbar-brand nav-tap" href="#home">Bo Bo Aung</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active nav-tap" aria-current="page" href="#home">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link nav-tap" href="#about">About</a>
-                        </li>
-                        <!-- <li class="nav-item dropdown">
+    <nav class="navbar navbar-expand-lg bg-light py-3">
+        <div class="container">
+            <a class="navbar-brand nav-tap" href="#home">Bo Bo Aung</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active nav-tap" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-tap" href="#about">About</a>
+                    </li>
+                    <!-- <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
                                 Projects
@@ -67,25 +66,25 @@
                                 <li><a class="dropdown-item" href="#">Something else here</a></li>
                             </ul>
                         </li> -->
-                        <li class="nav-item">
-                            <a class="nav-link nav-tap" href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                    <button class="btn btn-outline-success">Download CV</button>
-                </div>
+                    <li class="nav-item">
+                        <a class="nav-link nav-tap" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <button class="btn btn-outline-success">Download CV</button>
             </div>
-        </nav>
-    </div>
+        </div>
+    </nav>
     <!-- end nav section -->
 
     <!-- start content section -->
     <div>
-        <!-- start welcome section -->
-        <div class="container-fluid welcome-title">
-            <div class="container">
-                <div class="content" id="home">
-                    <div class="row my-5">
-                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 mb-5">
+        <!-- start home section -->
+        <div class="content" id="home">
+            <!-- start welcome section -->
+            <div class="welcome-title mb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
                             <h2>Hello,</h2>
                             <h2>I'm Bo Bo Aung,</h2>
                             <h2>Web & App Developer.</h2>
@@ -98,101 +97,113 @@
                             </a>
                         </div>
                         <!-- <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                        </div> -->
+                            </div> -->
                     </div>
                 </div>
+            </div>
+            <!-- end welcome section -->
 
-                <div class="content" id="about">
-                    <!-- start skills section -->
-                    <div class="container">
-                        <h2 class="text-center text-info">My Skills</h2>
-                        <hr class="title-hr mb-5">
+            <!-- start skill section -->
+            <div>
+                <div class="mb-5">
+                    <h2 class="text-center text-info">My Skills</h2>
+                    <hr class="title-hr">
+                </div>
 
-                        <div class="row text-center">
-                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 mt-3 mb-5">
-                                <h4>Programming Languages</h4>
-                                <i class="fa-brands fa-js fa-5x"></i>
-                                <i class="fa-brands fa-java fa-5x"></i>
-                                <i class="fa-brands fa-php fa-5x"></i>
-                            </div>
+                <div class="container">
+                    <div class="row text-center">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 mt-3 mb-5">
+                            <h4>Programming Languages</h4>
+                            <i class="fa-brands fa-js fa-5x"></i>
+                            <i class="fa-brands fa-java fa-5x"></i>
+                            <i class="fa-brands fa-php fa-5x"></i>
+                        </div>
 
-                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 mt-3 mb-5">
-                                <h4>Frontend Development</h4>
-                                <i class="fa-brands fa-html5 fa-5x"></i>
-                                <i class="fa-brands fa-css3-alt fa-5x"></i>
-                                <i class="fa-brands fa-vuejs fa-5x"></i>
-                                <i class="fa-brands fa-bootstrap fa-5x"></i>
-                            </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 mt-3 mb-5">
+                            <h4>Frontend Development</h4>
+                            <i class="fa-brands fa-html5 fa-5x"></i>
+                            <i class="fa-brands fa-css3-alt fa-5x"></i>
+                            <i class="fa-brands fa-vuejs fa-5x"></i>
+                            <i class="fa-brands fa-bootstrap fa-5x"></i>
+                        </div>
 
-                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 mt-3 mb-5">
-                                <h4>Backend Development</h4>
-                                <i class="fa-brands fa-node fa-5x"></i>
-                                <i class="fa-brands fa-laravel fa-5x"></i>
-                            </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 mt-3 mb-5">
+                            <h4>Backend Development</h4>
+                            <i class="fa-brands fa-node fa-5x"></i>
+                            <i class="fa-brands fa-laravel fa-5x"></i>
+                        </div>
 
-                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 mt-3 mb-5">
-                                <h4>Mobile App Development</h4>
-                                <i class="fa-brands fa-android fa-5x"></i>
-                            </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 mt-3 mb-5">
+                            <h4>Mobile App Development</h4>
+                            <i class="fa-brands fa-android fa-5x"></i>
+                        </div>
 
-                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 mt-3 mb-5">
-                                <h4>Design</h4>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 mt-3 mb-5">
+                            <h4>Design</h4>
 
-                                <i class="fa-brands fa-figma fa-5x"></i>
-                            </div>
+                            <i class="fa-brands fa-figma fa-5x"></i>
+                        </div>
 
-                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 mt-3 mb-5">
-                                <h4>Others</h4>
-                                <i class="fa-brands fa-linux fa-5x"></i>
-                                <i class="fa-brands fa-git fa-5x"></i>
-                            </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 mt-3 mb-5">
+                            <h4>Others</h4>
+                            <i class="fa-brands fa-linux fa-5x"></i>
+                            <i class="fa-brands fa-git fa-5x"></i>
                         </div>
                     </div>
-                    <!-- end skills section -->
                 </div>
 
-                <div class="content" id="contact">
-                    <h2>Contact Me</h2>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                                <form action="">
-                                    <div class="mb-3">
-                                        <label for="exampleFormControlInput1" class="form-label">Name</label>
-                                        <input type="email" class="form-control" id="exampleFormControlInput1" required>
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="exampleFormControlInput1" class="form-label">Email</label>
-                                        <input type="email" class="form-control" id="exampleFormControlInput1" required>
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
-                                            required>
+            </div>
+            <!-- end skill section -->
+        </div>
+        <!-- end home section -->
+
+        <!-- start about section -->
+        <div class="content" id="about">
+
+        </div>
+        <!-- end about section -->
+
+        <div class="content" id="contact">
+            <h2>Contact Me</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                        <form action="">
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Name</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required>
                                     </textarea>
-                                    </div>
-                                    <button class="btn btn-outline-info px-3">Send</button>
-                                </form>
                             </div>
-                        </div>
+                            <button class="btn btn-outline-info px-3">Send</button>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- end welcome section -->
     </div>
     <!-- end content section -->
 
 
 </body>
 <footer>
-    <div class="container-fluid text-center bg-light">
-        <div class="row mt-5 py-3">
-            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 my-3">
-                <h5>Created by <a href="#home" class="nav-tap text-info ft-created">Bo Bo Aung</a></h5>
+    <div class="container-fluid text-center bg-black text-light py-5 mt-5">
+        <div class="row">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 mb-2">
+                <h5>Copyright <i class="fa-regular fa-copyright"></i> | Created by <a href="#home" class="nav-tap text-info ft-created">Bo Bo Aung</a></h5>
+                <span class="text-secondary fw-light">
+                    All Right Registered<i class="fa-regular fa-registered"></i>
+                </span>
             </div>
-            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 my-3">
-                <a href="https://github.com/maungbo404" class="text-black" target="_blank">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                <a href="https://github.com/maungbo404" class="text-light" target="_blank">
                     <i class="fa-brands fa-github fa-2x me-2"></i>
                 </a>
                 <a href="https://t.me/maungbo404" class="text-info" target="_blank">
